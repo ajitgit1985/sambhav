@@ -1,7 +1,11 @@
 version: '3.8'
 
 services:
-
+  backend:
+    container_name: backend
+    build: ./Sambhav-Node-api/node-postgres/backend
+    ports:
+      -  "3001:3001"
 
   frontend:
     container_name: frontend
