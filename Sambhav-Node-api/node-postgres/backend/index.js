@@ -14,9 +14,9 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(function (req, res, next) {
-  // res.setHeader("Access-Control-Allow-Origin", "http://10.25.53.135:3000");
+   res.setHeader("Access-Control-Allow-Origin", "http://10.25.53.250:3000");
   // res.setHeader('Access-Control-Allow-Origin', 'http://10.23.124.59:8080');
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+//  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
