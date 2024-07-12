@@ -125,7 +125,7 @@ const Home = () => {
         <section className="about_container">
           <div className="container">
             <div className="sec_about text-align-center">
-              <h2 className="pg_heading">ABOUT SAMBHAV</h2>
+              <h2 className="pg_heading">ABOUT SAMBHAV111111</h2>
               <div className="btm_line"></div>
               <p>
                 The Ministry of Development of North Eastern Region is
