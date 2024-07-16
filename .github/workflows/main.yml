@@ -1,0 +1,26 @@
+name: Deploy to Self-Hosted Runner
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Docker containers
+        run: |
+          # Navigate to the application directory
+          cd /home/sambhav/sambhav
+
+          # Build the Docker containers from the Dockerfile(s)
+          docker-compose build
+
+          # Optional: Start the containers
+          docker-compose up -d
+
