@@ -29,10 +29,7 @@ jobs:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3   
-      - name: Docker System Prune
-        run: |
-          docker system prune -a > prune_output.log 2>&1  
+        uses: docker/setup-buildx-action@v3        
         
 
       - name: Build Docker image
