@@ -35,10 +35,7 @@ jobs:
           # Navigate to the application directory
           cd /home/sambhav/sambhav-App/Sambhav-React-App
           docker build -t devopsajit85/sambhav:latest .
-      - name: Trivy fs scan 
-        run : 
-          cd /home/sambhav/sambhav-App
-          trivy fs --format table -o fs.html .      
+        
 
           # Build the Docker containers from the Dockerfile(s)
           #docker-compose build
