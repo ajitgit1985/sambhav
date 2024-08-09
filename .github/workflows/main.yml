@@ -36,7 +36,7 @@ jobs:
           cd /home/sambhav/sambhav-App/Sambhav-React-App
           docker build -t devopsajit85/sambhav:latest .
       - name: Trivy image scan 
-        run : truvy image --format table -o image.html devopsajit85/sambhav:latest         
+        run : trivy image --format table -o image.html devopsajit85/sambhav:latest         
 
           # Build the Docker containers from the Dockerfile(s)
           #docker-compose build
