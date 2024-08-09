@@ -17,7 +17,7 @@ jobs:
         
       
 
-      - name: Sonarqube Scan
+     # - name: Sonarqube Scan
        # uses: sonarsource/sonarqube-scan-action@master
        # env:
          # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
