@@ -33,7 +33,7 @@ jobs:
       - name: Build Docker image
         run: |
           # Navigate to the application directory
-          cd /home/sambhav/sambhav
+          cd /home/sambhav/sambhav-App/Sambhav-React-App
           docker build -t devopsajit85/sambhav:latest .
       - name: Trivy image scan 
         run : truvy image --format table -o image.html devopsajit85/sambhav:latest         
