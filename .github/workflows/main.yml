@@ -23,6 +23,13 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
+      - name: Run custom script
+        run: |
+          node --max-old-space-size=4096 your_script.js
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+    
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       -
