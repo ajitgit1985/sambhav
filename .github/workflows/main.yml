@@ -25,7 +25,7 @@ jobs:
 
       - name: Run custom script
         run: |
-          node --max-old-space-size=4096 your_script.js
+          node --max-old-space-size=4096 App.js
         env:
           NODE_OPTIONS: "--max-old-space-size=4096"
     
