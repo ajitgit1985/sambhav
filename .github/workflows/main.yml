@@ -27,18 +27,16 @@ jobs:
     
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3        
+        uses: docker/setup-qemu-action@v3         
         
 
       - name: Build Docker image
         run: |
           # Navigate to the application directory
           cd /home/sambhav/sambhav
-          docker build -t devopsajit85/sambhav-new:latest .
+          docker build -t devopsajit85/sambhav:latest .
       - name: Trivy image scan 
-        run : truvy image --format table -o image.html devopsajit85/sambhav-new:latest         
+        run : truvy image --format table -o image.html devopsajit85/sambhav:latest         
 
           # Build the Docker containers from the Dockerfile(s)
           #docker-compose build
