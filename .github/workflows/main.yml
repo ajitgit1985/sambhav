@@ -17,7 +17,7 @@ jobs:
         
       - name: Trivy fs scan
         run: trivy fs --format table -o fs.report .
-         cd /home/sambhav/sambhav
+         
         
 
       - name: Build Docker containers
