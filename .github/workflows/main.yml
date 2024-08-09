@@ -19,15 +19,11 @@ jobs:
 
       - name: Sonarqube Scan
         uses: sonarsource/sonarqube-scan-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+       # env:
+         # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+         # SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
 
-      - name: Run custom script
-        run: |
-          node --max-old-space-size=4096 App.js
-        env:
-          NODE_OPTIONS: "--max-old-space-size=4096"
+      
     
 
       - name: Set up QEMU
