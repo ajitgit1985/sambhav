@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Trivy fs scan
-        run: trivy fs --format table -o fs.report .
+        run: trivy fs --format table -o fs.html .
          
         
 
